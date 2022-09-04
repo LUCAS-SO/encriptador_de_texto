@@ -5,7 +5,7 @@
 
 <p align="center">Encriptador de texto con diseño reponsive. Se realizo usando HTML para su estructura, CSS para su estética y JavaScript para su lógica.</p>
 
-<a href="#" rel="enlaceaproyecto"><h2 align="center"> Ingrese al proyecto: Encriptador de Texto.</h2></a>
+<a href="https://lucas-so.github.io/encriptador_de_texto/" rel="enlaceaproyecto"><h2 align="center"> Ingrese al proyecto: Encriptador de Texto.</h2></a>
 <br>
 
 <h4>Sobre el desafío:</h4>
