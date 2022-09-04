@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    margin: 20px 0;
+}
+
+header h1{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+body{
+    background: url(img/Opa.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #0A3871 ;
+}
+
+.div{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-area{
+    width: 100%;
+}
+
+.text{
+    display: block;
+    width: 80%;
+    height: 35vh;
+    margin: 20px auto;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    resize: none;
+}
+
+.text::placeholder{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text::-webkit-scrollbar{
+    width: 10px;
+}
+
+.text::-webkit-scrollbar-thumb{
+    background-color: #0A3871;
+    border-radius: 10px;
+}
+
+.petition {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.petition img{
+    width: 16px;
+    height: 16px;
+    padding: 5px 5px;
+}
+
+.petition p{
+    padding: 5px 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button{
+    max-width: 95%;
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.b-encrypt{
+    background-color: #0A3871;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.b-decrypt, .b-copy{
+    border-color: #0A3871;
+    background-color: rgba(216, 223, 232,0.6);
+    color: #0A3871;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.munieco{
+    display: none;
+}
+
+.container-decrypt{
+    display: inline-block;
+    background: rgba(245, 245, 245, 0.3);
+    border-radius: 32px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.container-decrypt p{
+    margin-bottom: 10px;
+}
+
+.container-decrypted{
+    width: 80%;
+    display: none;
+    background: rgba(255, 255, 255,0.3);
+    border-radius: 32px;
+    padding: 10px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.container-decrypted p{
+    margin: 15px 10px;
+    font-size: 1.5em;
+}
+
+.b-copy{
+    max-width: 90%;
+    margin: 5px 0 10px 0;
+}
+
+h2{
+    margin: 20px 0;
+}
+
+.container-decrypted hr{
+    width: 80%;
+    margin: 15px auto;
+}
+
+h3{
+    margin: 10px 0;
+}
+
+.container-copy p {
+    margin: 20px 0;
+}
+
+.diamond{
+    margin: 40px 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px 0; 
+}
+
+footer img{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.popup-swal{
+    border-radius: 24px;
+}
+
+.button-swal{
+    background-color: #0A3871;
+    color: white;
+}
+
+/* Media Query para tablet */
+@media screen and (min-width: 444px) and (max-width: 1024px) {
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text{
+        width: 90%;
+        height: 35vh;
+    }
+
+    .petition{
+        display: flex;
+        justify-content: center;
+    }   
+
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .b-encrypt{
+    margin: 0 10px;
+    }
+
+    .b-decrypt{
+    margin: 0 10px;
+    }
+
+    .container-decrypt, .container-decrypted{
+        width: 90%;
+    }
+
+    .container-decrypt p{
+        margin-bottom: 15px;
+    }
+
+    .diamond{
+        margin: 20px auto 40px auto;
+    }
+
+    footer p{
+        margin: 15px 0;
+    }
+
+    footer img{
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+}
+
+/* Media Query para Desktop */
+@media screen and (min-width: 1025px) and (max-width: 2560px){
+    
+    header{
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    .div-h1{
+        margin: 0 auto;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 70vh;
+        margin: 25px 0;
+    }
+
+    .text-area{
+        width: 60%;
+        margin: auto 0;
+    }
+
+    .text{
+        width: 90%;
+        height: 45vh;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .petition{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 10px 0;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+
+    button{
+        margin: 10px 15px;
+    }
+
+    .container{
+        width: 28%;
+    }
+
+    .container-decrypt, .container-decrypted {
+        height: 90%;
+    }
+
+    .munieco{
+        display: block;
+        max-width: 100%;
+        margin: 40px auto;
+    }
+
+    .container-decrypt h2{
+        margin: 35px 10px;
+    }
+
+    .container-decrypted{
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .container-decrypted h3{
+        margin: 25px 0;
+    }
+
+    .container-decrypted hr{
+        width: 80%;
+    }
+
+    .container-decrypted p{
+        margin: 20px 15px;
+    }
+
+    .container-decrypted button{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .diamond{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    footer p{
+        margin-top: 15px;
+    }
+
+    footer img{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+}

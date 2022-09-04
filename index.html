@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/message.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <header>
+            <div class="div-logo">
+                <a href="https://www.aluracursos.com/"><img class="logo" src="img/Logo.png" alt="Logo de Alura"></a>
+            </div>
+            <div class="div-h1">
+                <h1>Encriptador de texto</h1>
+            </div>
+        </header>
+
+        <hr class="div">
+
+        <main>
+            <section class="text-area">
+                <div>
+                    <textarea 
+                    name="encryptor" id="text" class="text" placeholder="Ingrese su texto aquí" autofocus></textarea>
+                </div>
+                <div class="petition">
+                    <img src="img/Vector.png" alt="Logo de alerta">
+                    <p>Solo letras minúsculas y sin ascentos</p>
+                </div>
+                <div class="buttons">
+                    <button id="b-encrypt" class="b-encrypt">Encriptar</button>
+                    <button id="b-decrypt" class="b-decrypt">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="container-decrypt"
+                id="container-decrypt">
+                    <img class="munieco" src="img/Muñeco.png" alt="Imagen de muñeco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que deseas encriptar o desencriptar.</p>
+                </div>
+                <div class="container-decrypted"
+                id="container-decrypted">
+                    <h3>Su mensaje:</h3>
+                    <hr>
+                    <div id="container-copy" class="container-copy">
+                        <p id="t-copied"></p>
+                    </div>
+                    <button class="b-copy" id="b-copy">Copiar</button>
+                </div>
+                <div class="diamond"><img src="img/diamod.png" alt=""></div>
+            </section> 
+        </main>
+
+        <hr class="div">
+
+        <footer>
+            <div>
+                <p><a href="https://www.oracle.com/ar/education/oracle-next-education/">ONE</a> | © Desafío Alura desarrollado por <b>Lucas Soria</b>.</p>
+            </div>
+            <div>
+                <a href="https://github.com/LUCAS-SO"><img src="img/github_logo.png" alt="Logo de GitHub"></a>
+                <a href="https://www.linkedin.com/in/lucasssoriav/"><img src="img/linkedin.png" alt="Logo de LinkedIn"></a>
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
